@@ -31,7 +31,7 @@
 
   outputs = { nixpkgs, self, ...} @ inputs:
   let
-    username = "frostphoenix";
+    username = "hassaan";
     system = "x86_64-linux";
     pkgs = import nixpkgs {
       inherit system;
@@ -41,20 +41,10 @@
   in
   {
     nixosConfigurations = {
-      desktop = nixpkgs.lib.nixosSystem {
-        inherit system;
-        modules = [ ./hosts/desktop ];
-        specialArgs = { host="desktop"; inherit self inputs username ; };
-      };
       laptop = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [ ./hosts/laptop ];
         specialArgs = { host="laptop"; inherit self inputs username ; };
-      };
-       vm = nixpkgs.lib.nixosSystem {
-        inherit system;
-        modules = [ ./hosts/vm ];
-        specialArgs = { host="vm"; inherit self inputs username ; };
       };
     };
   };

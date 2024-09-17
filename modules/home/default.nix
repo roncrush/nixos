@@ -5,13 +5,13 @@
     ./bat.nix                         # better cat command
     ./btop.nix                        # resouces monitor 
     ./cava.nix                        # audio visualizer
-    ./discord/discord.nix                     # discord with catppuccin theme
-    ./fastfetch.nix                         # fetch tool
-    ./floorp/floorp.nix               # firefox based browser
+    ./discord/discord.nix             # discord with catppuccin theme
+    ./fastfetch.nix                   # fetch tool
+    ./firefox/firefox.nix               # firefox
     ./fzf.nix                         # fuzzy finder
     ./gaming.nix                      # packages related to gaming
     ./git.nix                         # version control
-    ./gnome.nix                         # gnome apps
+    ./gnome.nix                       # gnome apps
     ./gtk.nix                         # gtk theme
     ./hyprland                        # window manager
     ./kitty.nix                       # terminal

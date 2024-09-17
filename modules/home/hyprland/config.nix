@@ -138,7 +138,7 @@
         "$mainMod, F1, exec, show-keybinds"
 
         # keybindings
-        "$mainMod, Return, exec, kitty"
+        "$mainMod, SHIFT, T, exec, kitty"
         "ALT, Return, exec, kitty --title float_kitty"
         "$mainMod SHIFT, Return, exec, kitty --start-as=fullscreen -o 'font_size=16'"
         "$mainMod, B, exec, hyprctl dispatch exec '[workspace 1 silent] floorp'"
@@ -148,7 +148,7 @@
         "$mainMod, Space, togglefloating,"
         "$mainMod, Space, centerwindow,"
         "$mainMod, Space, resizeactive, exact 950 600"
-        "$mainMod, D, exec, rofi -show drun || pkill rofi"
+        "$mainMod, exec, rofi -show drun || pkill rofi"
         "$mainMod SHIFT, D, exec, hyprctl dispatch exec '[workspace 4 silent] discord --enable-features=UseOzonePlatform --ozone-platform=wayland'"
         "$mainMod SHIFT, S, exec, hyprctl dispatch exec '[workspace 5 silent] SoundWireServer'"
         "$mainMod, Escape, exec, swaylock"
